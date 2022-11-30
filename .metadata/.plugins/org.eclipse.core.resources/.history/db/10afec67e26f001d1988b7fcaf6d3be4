@@ -1,0 +1,34 @@
+package com.kodlamaio.inventoryService.business.concretes;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.kodlamaio.common.utilities.mapping.ModelMapperService;
+import com.kodlamaio.inventoryService.business.abstracts.CarService;
+import com.kodlamaio.inventoryService.business.requests.create.CreateCarRequest;
+import com.kodlamaio.inventoryService.business.responses.create.CreateCarResponse;
+import com.kodlamaio.inventoryService.business.responses.get.GetAllBrandsResponse;
+import com.kodlamaio.inventoryService.business.responses.get.GetAllCarsResponse;
+import com.kodlamaio.inventoryService.dataAccess.CarRepository;
+import com.kodlamaio.inventoryService.entities.Car;
+
+public class CarManager implements CarService {
+	private CarRepository carRepository;
+	private ModelMapperService modelMapperService;
+
+	@Override
+	public List<GetAllCarsResponse> getAll() {
+		List<Car> cars = this.carRepository.findAll();
+		List<GetAllBrandsResponse> response = cars.stream()
+				.map(car -> this.modelMapperService.forResponse().map(car, GetAllCarsResponse.class))
+				.collect(Collectors.toList());
+		return null;
+	}
+
+	@Override
+	public CreateCarResponse add(CreateCarRequest createCarRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

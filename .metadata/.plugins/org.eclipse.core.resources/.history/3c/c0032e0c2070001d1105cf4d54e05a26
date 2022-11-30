@@ -1,0 +1,42 @@
+package com.kodlamaio.inventoryService.api.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kodlamaio.inventoryService.business.abstracts.CarService;
+import com.kodlamaio.inventoryService.business.requests.create.CreateCarRequest;
+import com.kodlamaio.inventoryService.business.requests.update.UpdateCarRequest;
+import com.kodlamaio.inventoryService.business.responses.create.CreateCarResponse;
+import com.kodlamaio.inventoryService.business.responses.get.GetAllBrandsResponse;
+import com.kodlamaio.inventoryService.business.responses.update.UpdateCarResponse;
+
+import lombok.AllArgsConstructor;
+
+@RestController
+@RequestMapping("/api/cars")
+@AllArgsConstructor
+public class CarsController {
+	private CarService carService;
+	
+	//entity,datataccess,request,response,abstract service,concrete manager,controller
+	
+	@GetMapping("/getAll")
+	public List<GetAllBrandsResponse> getAll(){
+		return this.carService.getAll();
+	}
+	@PostMapping("/add")
+	public CreateCarResponse add(CreateCarRequest createCarRequest) {
+		return this.carService.add(createCarRequest);
+	}
+	
+	
+	@PutMapping("/update")
+	public UpdateCarResponse update(UpdateCarRequest updateCarRequest) {
+		return this.carService.update(updateCarRequest);
+	}
+}

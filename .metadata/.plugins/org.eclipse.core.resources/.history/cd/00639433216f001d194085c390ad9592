@@ -1,0 +1,5 @@
+package com.kodlamaio.inventoryService.entities;
+
+public class Model {
+
+}

@@ -1,0 +1,45 @@
+package com.kodlamaio.inventoryService.api.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kodlamaio.inventoryService.business.abstracts.BrandService;
+import com.kodlamaio.inventoryService.business.requests.create.CreateBrandRequest;
+import com.kodlamaio.inventoryService.business.requests.update.UpdateBrandRequest;
+import com.kodlamaio.inventoryService.business.responses.create.CreateBrandResponse;
+import com.kodlamaio.inventoryService.business.responses.get.GetAllBrandsResponse;
+import com.kodlamaio.inventoryService.business.responses.update.UpdateBrandResponse;
+
+import lombok.AllArgsConstructor;
+
+@RestController
+@RequestMapping("/api/brands")
+@AllArgsConstructor
+public class BrandsController {               //entity,data access,request,response,abstract service,concrete manager,controller
+	private BrandService brandService;
+	
+	@GetMapping("/getAll")
+	public List<GetAllBrandsResponse> getAll(){
+		return this.brandService.getAll();
+	}
+	
+	@PostMapping("/add")
+	public CreateBrandResponse add(@Valid @RequestBody CreateBrandRequest createBrandRequest) {
+		return this.brandService.add(createBrandRequest);
+	}
+	@PutMapping("/update")
+	public UpdateBrandResponse update(@Valid @RequestBody UpdateBrandRequest updateBrandRequest) {
+		return this.brandService.update(updateBrandRequest); 
+	}
+	
+	
+	
+}
