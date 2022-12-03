@@ -8,10 +8,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GetAllCarsResponse {
+	
 	private String id;
 	private double dailyPrice;
 	private int modelYear;
 	private String plate;
 	private String brandName;
 	private String colorName; 
+	private int state;
 }

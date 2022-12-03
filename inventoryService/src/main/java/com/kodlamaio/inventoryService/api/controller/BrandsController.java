@@ -29,16 +29,16 @@ import lombok.AllArgsConstructor;
 public class BrandsController {               //entity,data access,request,response,abstract service,concrete manager,controller
 	private BrandService brandService;
 	
-	@GetMapping("/getall")
+	@GetMapping
 	public List<GetAllBrandsResponse> getAll(){
 		return this.brandService.getAll();
 	}
 	
-	@PostMapping("/add")
+	@PostMapping
 	public CreateBrandResponse add(@Valid @RequestBody CreateBrandRequest createBrandRequest) {
 		return this.brandService.add(createBrandRequest);
 	}
-	@PutMapping("/update")
+	@PutMapping
 	public UpdateBrandResponse update(@Valid @RequestBody UpdateBrandRequest updateBrandRequest) {
 		return this.brandService.update(updateBrandRequest); 
 	}
@@ -47,7 +47,7 @@ public class BrandsController {               //entity,data access,request,respo
 		return this.brandService.getById(id);
 	}
 	@DeleteMapping("{id}")
-	public void delete(@PathVariable String id) {
+	public void delete(@PathVariable String id) {  //rootbalancing yük dengeleme yapılır.//gateway kurunca diğer servisleri artık çağırabiliriz.
 		 this.brandService.delete(id);
 	}
 	
