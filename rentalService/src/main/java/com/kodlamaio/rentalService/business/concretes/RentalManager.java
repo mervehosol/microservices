@@ -1,9 +1,7 @@
 package com.kodlamaio.rentalService.business.concretes;
 
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -15,8 +13,6 @@ import com.kodlamaio.rentalService.business.abstracts.RentalService;
 import com.kodlamaio.rentalService.business.requests.create.CreateRentalRequest;
 import com.kodlamaio.rentalService.business.requests.update.UpdateRentalRequest;
 import com.kodlamaio.rentalService.business.responses.create.CreateRentalResponse;
-import com.kodlamaio.rentalService.business.responses.get.GetAllRentalsResponse;
-import com.kodlamaio.rentalService.business.responses.get.GetRentalResponse;
 import com.kodlamaio.rentalService.business.responses.update.UpdateRentalResponse;
 import com.kodlamaio.rentalService.client.CarClient;
 import com.kodlamaio.rentalService.dataAccess.RentalRepository;
@@ -34,14 +30,6 @@ public class RentalManager implements RentalService {
 	private CarClient client;
 
 
-	@Override
-	public List<GetAllRentalsResponse> getAll() {
-		List<Rental> rentals = this.rentalRepository.findAll();
-		List<GetAllRentalsResponse> response = rentals.stream()
-				.map(rental -> this.modelMapperService.forResponse().map(rental, GetAllRentalsResponse.class))
-				.collect(Collectors.toList());
-		return response;
-	}
 
 	@Override
 	public CreateRentalResponse add(CreateRentalRequest createRentalRequest) {
@@ -87,15 +75,6 @@ public class RentalManager implements RentalService {
 
 	}
 
-	@Override
-	public GetRentalResponse getById(String carId) {
-		checkIfRentalExistsById(carId);
-		Rental rental = rentalRepository.findById(carId).get();
-		GetRentalResponse getRentalResponse = this.modelMapperService.forResponse().map(rental,
-				GetRentalResponse.class);
-		return getRentalResponse;
-
-	}
 
 	private void checkIfRentalExistsById(String carId) {
 		var result = this.rentalRepository.findById(carId);
@@ -105,4 +84,21 @@ public class RentalManager implements RentalService {
 	
 	
  }
+
+	@Override
+	public double getTotalPrice(String id) {
+		return rentalRepository.findById(id).get().getTotalPrice();
+
+	}
+
+	@Override
+	public void setConditionByPayment(String id) {
+		Rental rental = this.rentalRepository.findById(id).get();
+		if (rental.getCondition()==1) {
+			rental.setCondition(2);	
+		}
+		rentalRepository.save(rental);
+		
+	}
+
 }

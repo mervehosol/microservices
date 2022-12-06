@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateRentalRequest {
+	private String id;
+
 	private String carId;
 	
 	private int rentedForDays;
