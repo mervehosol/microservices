@@ -21,6 +21,8 @@ public class Invoice {
 	private String id;
 	@Column(name = "rentalId")
 	private String rentalId;
+	@Column(name = "paymentId")
+    private String paymentId;
 
 }
 

@@ -5,8 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import com.kodlamaio.common.events.RentalCreatedEvent;
-import com.kodlamaio.common.events.RentalUpdatedEvent;
+import com.kodlamaio.common.events.rental.RentalCreatedEvent;
+import com.kodlamaio.common.events.rental.RentalUpdatedEvent;
 import com.kodlamaio.inventoryService.business.abstracts.CarService;
 
 import lombok.AllArgsConstructor;

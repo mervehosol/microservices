@@ -1,7 +1,7 @@
 package com.kodlamaio.rentalService.kafka;
 
-import com.kodlamaio.common.events.RentalCreatedEvent;
-import com.kodlamaio.common.events.RentalUpdatedEvent;
+import com.kodlamaio.common.events.rental.RentalCreatedEvent;
+import com.kodlamaio.common.events.rental.RentalUpdatedEvent;
 
 import lombok.AllArgsConstructor;
 

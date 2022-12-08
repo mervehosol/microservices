@@ -1,9 +1,0 @@
-package com.kodlamaio.common.utilities.exceptions;
-
-public class BusinessException  extends RuntimeException{
-	private 
-
-	public BusinessException(String message) {
-		super(message);
-	}
-}

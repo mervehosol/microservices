@@ -1,5 +1,0 @@
-package com.kodlamaio.inventoryService.business.responses.get;
-
-public class GetAllModelsResponse {
-
-}
