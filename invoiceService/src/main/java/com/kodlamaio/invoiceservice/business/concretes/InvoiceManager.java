@@ -28,7 +28,8 @@ public  class InvoiceManager implements InvoiceService {
 	private InvoiceRepository invoiceRepository;
 	 private ModelMapperService modelMapperService;
 	    private InvoiceProducer invoiceProducer;
-		private Object createInvoiceRequest;
+		
+	
 
 	@Override
 	public Invoice add(PaymentCreatedEvent paymentCreatedEvent) {
@@ -46,7 +47,7 @@ public  class InvoiceManager implements InvoiceService {
 	}
 
 	@Override
-	public CreateInvoiceResponse add(CreateInvoiceRequest createInvoiceRequestrequest) {
+	public CreateInvoiceResponse add(CreateInvoiceRequest createInvoiceRequest) {
 		Invoice invoice = modelMapperService.forRequest().map(createInvoiceRequest, Invoice.class);
 		invoice.setId(UUID.randomUUID().toString());
 		

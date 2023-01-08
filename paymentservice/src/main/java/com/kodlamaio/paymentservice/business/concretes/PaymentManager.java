@@ -34,7 +34,17 @@ public class PaymentManager implements PaymentService {
 		paymentCreatedEvent.setRentalId(createdPayment.getRentalId());
 		paymentCreatedEvent.setMessage("");
 
-		CreatePaymentResponse createPaymentResponse = modelMapperService.forResponse().map(payment, CreatePaymentResponse.class);
+		CreatePaymentResponse createPaymentResponse= new CreatePaymentResponse();
+		createPaymentResponse.setBalance(createdPayment.getBalance());
+		createPaymentResponse.setCardHolder(createdPayment.getCardHolder());
+		createPaymentResponse.setCardNo(createdPayment.getCardNo());
+		createPaymentResponse.setCvv(createdPayment.getCvv());
+		createPaymentResponse.setId(createdPayment.getId());
+		createPaymentResponse.setRentalId(createdPayment.getRentalId());
+		createPaymentResponse.setStatus(createdPayment.getStatus());
+		
+		
+		//=modelMapperService.forResponse().map(createdPayment, CreatePaymentResponse.class);
 
 		return createPaymentResponse;
 	}

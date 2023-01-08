@@ -11,15 +11,21 @@ import org.springframework.stereotype.Service;
 
 import com.kodlamaio.common.events.invoice.InvoiceCreatedEvent;
 
-import lombok.AllArgsConstructor;
-
 @Service
-@AllArgsConstructor
 public class InvoiceProducer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(InvoiceProducer.class);
+    
+    
 
-    private NewTopic topic;
+    public InvoiceProducer(NewTopic topic, KafkaTemplate<String, InvoiceCreatedEvent> kafkaTemplateCreated) {
+		super();
+		this.topic = topic;
+		this.kafkaTemplateCreated = kafkaTemplateCreated;
+	}
+
+
+	private NewTopic topic;
 
     private KafkaTemplate<String, InvoiceCreatedEvent> kafkaTemplateCreated;
 

@@ -4690,7 +4690,7 @@ org.eclipse.core.runtime.CoreException: Could not write artifact lastUpdated sta
 	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
 	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: java.io.FileNotFoundException: C:\Users\merve\.m2\repository\org\springframework\cloud\>spring-cloud-starter-openfeign\3.1.5\m2e-lastUpdated.properties (Dosya adý, dizin adý veya birim etiketi sözdizimi hatalý)
+Caused by: java.io.FileNotFoundException: C:\Users\merve\.m2\repository\org\springframework\cloud\>spring-cloud-starter-openfeign\3.1.5\m2e-lastUpdated.properties (Dosya adï¿½, dizin adï¿½ veya birim etiketi sï¿½zdizimi hatalï¿½)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
@@ -4725,7 +4725,7 @@ org.eclipse.core.runtime.CoreException: Could not write artifact lastUpdated sta
 	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
 	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: java.io.FileNotFoundException: C:\Users\merve\.m2\repository\org\springframework\cloud\>spring-cloud-starter-openfeign\3.1.5\m2e-lastUpdated.properties (Dosya adý, dizin adý veya birim etiketi sözdizimi hatalý)
+Caused by: java.io.FileNotFoundException: C:\Users\merve\.m2\repository\org\springframework\cloud\>spring-cloud-starter-openfeign\3.1.5\m2e-lastUpdated.properties (Dosya adï¿½, dizin adï¿½ veya birim etiketi sï¿½zdizimi hatalï¿½)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
@@ -5791,14 +5791,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\apigateway
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 35 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -5841,14 +5841,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\apigateway
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 25 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\apigateway: C:\microservices\apigateway (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -8753,14 +8753,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\configServer
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 35 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -8822,14 +8822,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\configServer
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 35 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -8884,14 +8884,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\configServer
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 35 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -8931,14 +8931,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\configServer
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 25 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -9045,14 +9045,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\configServer
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 35 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -9099,14 +9099,14 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
  for project  at C:\microservices\configServer
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
 	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:124)
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$3(MavenImpl.java:431)
 	... 25 common frames omitted
 Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriþim engellendi) @ 
+[FATAL] Non-readable POM C:\microservices\configServer: C:\microservices\configServer (Eriï¿½im engellendi) @ 
 
 	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
 	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:687)
@@ -10553,3 +10553,415 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-12-08 19:38:46,113 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2022-12-08 19:38:46,133 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-12-08 19:38:46,136 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-08 19:38:46,136 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-08 19:38:46,137 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\rentalService\src\test\resources
+2022-12-10 17:18:08,733 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-12-10 17:46:51,170 [Worker-22: Launching config-server - ConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:51,174 [Worker-22: Launching config-server - ConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:51,177 [Worker-22: Launching config-server - ConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:46:51,188 [Worker-22: Launching config-server - ConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:46:51,192 [Worker-22: Launching config-server - ConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:51,192 [Worker-22: Launching config-server - ConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:51,192 [Worker-22: Launching config-server - ConfigServerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\config-server\src\test\resources
+2022-12-10 17:46:55,629 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:55,629 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:55,630 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:46:55,632 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:46:55,636 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:55,637 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:55,637 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\apigateway\src\test\resources
+2022-12-10 17:46:56,759 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:56,760 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:56,760 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:46:56,762 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:46:56,766 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:56,767 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:56,767 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\common\src\test\resources
+2022-12-10 17:46:58,045 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:58,045 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:58,046 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:46:58,049 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:46:58,053 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:46:58,054 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:46:58,054 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\discovery.server\src\test\resources
+2022-12-10 17:47:00,558 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:00,559 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:00,559 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:47:00,563 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:47:00,566 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:00,567 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:00,567 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\filterService\src\test\resources
+2022-12-10 17:47:02,110 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:02,110 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:02,111 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:47:02,115 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:47:02,119 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:02,119 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:02,119 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\inventoryService\src\test\resources
+2022-12-10 17:47:02,977 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:02,977 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:02,978 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:47:02,990 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:47:02,995 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:02,995 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:02,995 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 17:47:03,750 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:03,750 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:03,750 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:47:03,762 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:47:03,767 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:03,767 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:03,767 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\paymentservice\src\test\resources
+2022-12-10 17:47:04,688 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:04,688 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:04,688 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 17:47:04,701 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 17:47:04,706 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 17:47:04,706 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 17:47:04,706 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\rentalService\src\test\resources
+2022-12-10 18:13:16,096 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 18:13:16,099 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 18:13:16,109 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 18:13:16,148 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 18:13:16,153 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 18:13:16,153 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 18:13:16,153 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 18:18:52,685 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 18:18:52,686 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 18:18:52,687 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 18:18:52,732 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 18:18:52,739 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 18:18:52,739 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 18:18:52,739 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\paymentservice\src\test\resources
+2022-12-10 18:28:09,292 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 18:28:09,293 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 18:28:09,296 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 18:28:09,355 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 18:28:09,361 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 18:28:09,362 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 18:28:09,362 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\paymentservice\src\test\resources
+2022-12-10 21:58:42,872 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 21:58:42,876 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 21:58:42,880 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 21:58:43,008 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 21:58:43,011 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 21:58:43,011 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 21:58:43,011 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\paymentservice\src\test\resources
+2022-12-10 22:31:38,343 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:31:38,344 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:31:38,346 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:31:38,476 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:31:38,478 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:31:38,479 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:31:38,479 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:40:27,178 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:40:27,178 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:40:27,179 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:40:27,265 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:40:27,269 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:40:27,269 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:40:27,269 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:43:19,733 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:43:19,733 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:43:19,734 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:43:19,743 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:43:19,749 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:43:19,749 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:43:19,749 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:51:03,232 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:51:03,232 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:51:03,232 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:51:03,238 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:51:03,245 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:51:03,245 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:51:03,245 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:51:10,459 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:51:10,459 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:51:10,461 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:51:10,478 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:51:10,484 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:51:10,484 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:51:10,484 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:52:03,440 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:52:03,440 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:52:03,441 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:52:03,446 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:52:03,449 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:52:03,450 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:52:03,450 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:55:07,271 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:55:07,271 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:55:07,271 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:55:07,277 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:55:07,283 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:55:07,283 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:55:07,283 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:58:26,834 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:58:26,835 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:58:26,835 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:58:26,840 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:58:26,844 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:58:26,845 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:58:26,845 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:59:25,364 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:25,364 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:25,365 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:59:25,371 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:59:25,376 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:25,376 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:25,376 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:59:32,631 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:32,631 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:32,632 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:59:32,637 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:59:32,643 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:32,643 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:32,643 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:59:39,952 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:39,953 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:39,953 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:59:39,958 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:59:39,960 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:39,961 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:39,961 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 22:59:59,773 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:59,773 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:59,774 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 22:59:59,779 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 22:59:59,784 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 22:59:59,784 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 22:59:59,784 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:00:01,888 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:00:01,888 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:00:01,889 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:00:01,894 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:00:01,900 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:00:01,900 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:00:01,900 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:00:05,069 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:00:05,069 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:00:05,070 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:00:05,074 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:00:05,077 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:00:05,077 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:00:05,077 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:00:39,532 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:00:39,532 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:00:39,533 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:00:39,536 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:00:39,539 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:00:39,539 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:00:39,539 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:01:55,715 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:01:55,715 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:01:55,716 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:01:55,722 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:01:55,727 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:01:55,727 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:01:55,727 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:02:38,070 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:02:38,070 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:02:38,071 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:02:38,075 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:02:38,078 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:02:38,078 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:02:38,078 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:04:13,408 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:04:13,408 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:04:13,409 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:04:13,418 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:04:13,422 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:04:13,422 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:04:13,422 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:06:10,291 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:06:10,291 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:06:10,292 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:06:10,297 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:06:10,302 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:06:10,302 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:06:10,302 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:07:07,280 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:07:07,281 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:07:07,281 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:07:07,288 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:07:07,292 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:07:07,292 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:07:07,292 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:08:49,663 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:49,663 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:49,663 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:49,665 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:49,669 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:49,669 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:49,669 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\apigateway\src\test\resources
+2022-12-10 23:08:49,845 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:49,845 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:49,845 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:49,847 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:49,850 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:49,850 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:49,850 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\common\src\test\resources
+2022-12-10 23:08:50,447 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:50,448 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:50,448 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:50,461 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:50,467 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:50,467 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:50,468 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\config-server\src\test\resources
+2022-12-10 23:08:50,772 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:50,772 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:50,772 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:50,774 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:50,777 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:50,777 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:50,777 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\discovery.server\src\test\resources
+2022-12-10 23:08:51,231 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:51,231 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:51,241 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:51,244 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:51,249 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:51,249 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:51,249 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\filterService\src\test\resources
+2022-12-10 23:08:51,553 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:51,553 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:51,553 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:51,556 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:51,559 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:51,559 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:51,559 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\inventoryService\src\test\resources
+2022-12-10 23:08:51,910 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:51,910 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:51,910 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:51,922 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:51,925 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:51,925 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:51,925 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:08:52,124 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:52,125 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:52,125 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:52,128 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:52,131 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:52,131 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:52,131 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\paymentservice\src\test\resources
+2022-12-10 23:08:52,462 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:52,462 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:52,463 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:08:52,466 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:08:52,471 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:08:52,471 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:08:52,471 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\rentalService\src\test\resources
+2022-12-10 23:12:52,494 [Worker-62: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:12:52,504 [Worker-62: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:12:52,512 [Worker-62: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:12:52,648 [Worker-62: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:12:52,652 [Worker-62: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:12:52,652 [Worker-62: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:12:52,652 [Worker-62: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:13:42,417 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:13:42,418 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:13:42,419 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:13:42,474 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:13:42,479 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:13:42,479 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:13:42,479 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:14:46,126 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:14:46,126 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:14:46,127 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:14:46,204 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:14:46,208 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:14:46,208 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:14:46,208 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:14:54,498 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:14:54,499 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:14:54,499 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:14:54,541 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:14:54,545 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:14:54,545 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:14:54,546 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:16:09,403 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:16:09,403 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:16:09,404 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:16:09,410 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:16:09,414 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:16:09,414 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:16:09,414 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:16:24,871 [Worker-92: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:16:24,872 [Worker-92: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:16:24,873 [Worker-92: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:16:24,882 [Worker-92: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:16:24,886 [Worker-92: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:16:24,887 [Worker-92: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:16:24,887 [Worker-92: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-10 23:26:45,325 [Worker-94: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:26:45,325 [Worker-94: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:26:45,326 [Worker-94: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-10 23:26:45,381 [Worker-94: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-10 23:26:45,387 [Worker-94: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-10 23:26:45,387 [Worker-94: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-10 23:26:45,387 [Worker-94: Launching invoiceService - InvoiceServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2022-12-27 13:04:53,402 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-01-04 22:38:35,429 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-01-04 23:04:56,639 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:56,644 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:56,648 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:04:56,664 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:04:56,668 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:56,668 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:56,668 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\apigateway\src\test\resources
+2023-01-04 23:04:57,966 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:57,966 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:57,967 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:04:57,968 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:04:57,972 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:57,972 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:57,972 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\common\src\test\resources
+2023-01-04 23:04:58,937 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:58,937 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:58,937 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:04:58,941 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:04:58,946 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:58,946 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:58,946 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\config-server\src\test\resources
+2023-01-04 23:04:59,777 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:59,778 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:59,778 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:04:59,780 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:04:59,784 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:04:59,784 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:04:59,784 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\discovery.server\src\test\resources
+2023-01-04 23:05:01,641 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:01,642 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:01,642 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:05:01,645 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:05:01,648 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:01,649 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:01,649 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\filterService\src\test\resources
+2023-01-04 23:05:03,270 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:03,271 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:03,271 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:05:03,274 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:05:03,279 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:03,279 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:03,280 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\inventoryService\src\test\resources
+2023-01-04 23:05:04,271 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:04,271 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:04,272 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:05:04,276 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:05:04,282 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:04,282 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:04,282 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\invoiceService\src\test\resources
+2023-01-04 23:05:05,314 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:05,314 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:05,315 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:05:05,318 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:05:05,325 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:05,325 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:05,325 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\paymentservice\src\test\resources
+2023-01-04 23:05:06,387 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:06,387 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:06,388 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-04 23:05:06,401 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-01-04 23:05:06,406 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-04 23:05:06,406 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-04 23:05:06,406 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\microservices\rentalService\src\test\resources
+2023-01-07 22:38:31,171 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
