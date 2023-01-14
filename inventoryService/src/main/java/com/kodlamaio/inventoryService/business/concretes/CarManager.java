@@ -14,6 +14,7 @@ import com.kodlamaio.inventoryService.business.requests.create.CreateCarRequest;
 import com.kodlamaio.inventoryService.business.requests.update.UpdateCarRequest;
 import com.kodlamaio.inventoryService.business.responses.create.CreateCarResponse;
 import com.kodlamaio.inventoryService.business.responses.get.GetAllCarsResponse;
+import com.kodlamaio.inventoryService.business.responses.get.GetCarResponse;
 import com.kodlamaio.inventoryService.business.responses.update.UpdateCarResponse;
 import com.kodlamaio.inventoryService.dataAccess.CarRepository;
 import com.kodlamaio.inventoryService.entities.Car;
@@ -63,7 +64,15 @@ public class CarManager implements CarService {
 		return updateCarResponse;
 	}
 
+	@Override
+	public GetCarResponse getById(String carId) {
+		checkIfCarExistsById(carId);
+        Car car = carRepository.findById(carId).orElseThrow();
+        GetCarResponse response = modelMapperService.forResponse().map(car, GetCarResponse.class);
 
+        return response;
+    }
+	
 	@Override
 	public void delete(String id) {
 		checkIfCarExistsById(id);
@@ -101,13 +110,8 @@ public class CarManager implements CarService {
 				
 			}
 
-			@Override
-			public void getIfByCarId(String carId) {
-			Car car=this.carRepository.findById(carId).get();
-			if(car.getState()!=1 || car==null) {
-				throw new BusinessException("CAR NOT AVAİLABLE");
-			}
-		}
+			
+		
 
 
 }

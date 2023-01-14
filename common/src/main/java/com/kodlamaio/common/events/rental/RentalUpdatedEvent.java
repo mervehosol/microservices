@@ -9,6 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RentalUpdatedEvent {
 	private String message;
-	private String carId;
+	private String oldCarId;
+	private String newCarId;
 
-}
+	}
+
+

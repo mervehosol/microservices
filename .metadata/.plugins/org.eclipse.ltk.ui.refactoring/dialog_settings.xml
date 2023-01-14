@@ -7,7 +7,7 @@
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item key="width" value="630"/>
-		<item key="height" value="310"/>
+		<item key="height" value="290"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item key="moveWizard.updateQualifiedNames" value="false"/>

@@ -1,5 +1,7 @@
 package com.kodlamaio.invoiceservice.business.requests;
 
+import java.time.LocalDate;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,15 +11,22 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 public class CreateInvoiceRequest {
-	private String paymentId;
-	
-	private String customerFirstName;
-	
-	private String customerLastName;
+	private String carId;
 
-	private double tax;
-	
+	private String fullName;
+
+	private String modelName;
+
+	private String brandName;
+
+	private int modelYear;
+
+	private double dailyPrice;
+
 	private double totalPrice;
-	
-	private String address;
+
+	private int rentedForDays;
+
+	private LocalDate rentedDate;
+
 }

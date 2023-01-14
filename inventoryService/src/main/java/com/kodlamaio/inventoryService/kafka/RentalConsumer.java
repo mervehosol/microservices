@@ -18,7 +18,7 @@ public class RentalConsumer {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(RentalConsumer.class);
 
-	@KafkaListener(topics = "${spring.kafka.topic.name}", groupId = "${spring.kafka.consumer.group-id}")
+	@KafkaListener(topics = "rental-created", groupId = "rental-create")
 	public void consume(RentalCreatedEvent event) {
 		LOGGER.info(String.format("Order event received in stock service => %s", event.toString()));
 
@@ -26,10 +26,11 @@ public class RentalConsumer {
 
 		// save the order event into the database
 	}
-
+	@KafkaListener(topics = "rental-updated", groupId = "update")
 	public void consume(RentalUpdatedEvent event) {
 		LOGGER.info(String.format("Order event received in stock service => %s", event.toString()));
-		carService.updateCarState(event.getCarId(), 3); //eski araba yeni araba olacak eski müsait durumna gelir.
+		carService.updateCarState(event.getOldCarId(), 1);
+		carService.updateCarState(event.getNewCarId(), 3); //eski araba yeni araba olacak eski müsait durumna gelir.
 		// save the order event into the database
 	}
 }

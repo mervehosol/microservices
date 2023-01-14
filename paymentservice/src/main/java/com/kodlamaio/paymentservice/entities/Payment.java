@@ -17,26 +17,24 @@ import lombok.NoArgsConstructor;
 public class Payment {
 
 	@Id
-	@Column(name="id")
+	@Column(name = "id")
 	private String id;
-	
-	@Column(name="carNo")
+
+	@Column(name = "cardNo")
 	private String cardNo;
-	
-	@Column(name="cardHolder")
+
+	@Column(name = "cardHolder")
 	private String cardHolder;
-	
-	@Column(name="cvv")
-	private int cvv;
-	
-	@Column(name ="rentalId")
-	private String rentalId;
-	
-	@Column(name ="balance")
+
+	@Column(name = "cvv")
+	private String cvv;
+
+	@Column(name = "cardDate")
+	private String cardDate;
+
+	@Column(name = "balance")
 	private double balance;
-	
-	@Column(name ="status")
-	private int status;
+
 	
 
 }

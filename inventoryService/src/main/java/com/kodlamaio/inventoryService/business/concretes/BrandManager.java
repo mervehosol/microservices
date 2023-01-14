@@ -17,6 +17,7 @@ import com.kodlamaio.inventoryService.business.responses.get.GetBrandResponse;
 import com.kodlamaio.inventoryService.business.responses.update.UpdateBrandResponse;
 import com.kodlamaio.inventoryService.dataAccess.BrandRepository;
 import com.kodlamaio.inventoryService.entities.Brand;
+import com.kodlamaio.inventoryService.kafka.InventoryProducer;
 
 import lombok.AllArgsConstructor;
 
@@ -26,6 +27,7 @@ public class BrandManager implements BrandService {
 
 	private BrandRepository brandRepository;
 	private ModelMapperService modelMapperService;
+	private InventoryProducer inventoryProducer;
 
 	@Override
 	public List<GetAllBrandsResponse> getAll() {
@@ -34,6 +36,13 @@ public class BrandManager implements BrandService {
 				.map(brand -> this.modelMapperService.forResponse().map(brand, GetAllBrandsResponse.class))
 				.collect(Collectors.toList());
 		return response;
+	}
+	@Override
+	public GetBrandResponse getById(String id) {
+		checkIfBrandExistsById(id);
+		Brand brand =brandRepository.findById(id).get();
+		GetBrandResponse getBrandResponse = this.modelMapperService.forResponse().map(brand, GetBrandResponse.class);
+		return getBrandResponse;
 	}
 
 	@Override
@@ -64,15 +73,8 @@ public class BrandManager implements BrandService {
 	@Override
 	public void delete(String id) {
 		checkIfBrandExistsById(id);
-		brandRepository.deleteById(id);
+		this.brandRepository.deleteById(id);
 
-	}
-	@Override
-	public GetBrandResponse getById(String id) {
-		checkIfBrandExistsById(id);
-		Brand brand =brandRepository.findById(id).get();
-		GetBrandResponse getBrandResponse = this.modelMapperService.forResponse().map(brand, GetBrandResponse.class);
-		return getBrandResponse;
 	}
 
 	private void checkIfBrandExistsByName(String name) {

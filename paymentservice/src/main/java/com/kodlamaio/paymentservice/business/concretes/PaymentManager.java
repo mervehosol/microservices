@@ -4,11 +4,11 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.kodlamaio.common.events.PaymentCreatedEvent;
 import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
-import com.kodlamaio.paymentservice.api.controller.RentalApi;
+import com.kodlamaio.paymentservice.adapters.PosCheckService;
 import com.kodlamaio.paymentservice.business.abstracts.PaymentService;
+import com.kodlamaio.paymentservice.business.constants.Messages;
 import com.kodlamaio.paymentservice.business.requests.CreatePaymentRequest;
 import com.kodlamaio.paymentservice.business.responses.CreatePaymentResponse;
 import com.kodlamaio.paymentservice.dataAccess.PaymentRepository;
@@ -21,37 +21,50 @@ import lombok.AllArgsConstructor;
 public class PaymentManager implements PaymentService {
 	private PaymentRepository paymentRepository;
 	private ModelMapperService modelMapperService;
-	private RentalApi rentalApi;
+	private PosCheckService posCheckService;
 
 	@Override
-	public CreatePaymentResponse add(CreatePaymentRequest createPaymentRequest) {
-		Payment payment = this.modelMapperService.forRequest().map(createPaymentRequest, Payment.class);
+	public CreatePaymentResponse add(CreatePaymentRequest createPaymentRequest) { // sisteme card bilgilerini
+																					// kaydediyoruz
+		//checkIfCardNumberExists(createPaymentRequest.getCardNo());
+		Payment payment = modelMapperService.forRequest().map(createPaymentRequest, Payment.class);
 		payment.setId(UUID.randomUUID().toString());
-
-		Payment createdPayment = paymentRepository.save(payment);
-
-		PaymentCreatedEvent paymentCreatedEvent = new PaymentCreatedEvent();
-		paymentCreatedEvent.setRentalId(createdPayment.getRentalId());
-		paymentCreatedEvent.setMessage("");
-
-		CreatePaymentResponse createPaymentResponse= new CreatePaymentResponse();
-		createPaymentResponse.setBalance(createdPayment.getBalance());
-		createPaymentResponse.setCardHolder(createdPayment.getCardHolder());
-		createPaymentResponse.setCardNo(createdPayment.getCardNo());
-		createPaymentResponse.setCvv(createdPayment.getCvv());
-		createPaymentResponse.setId(createdPayment.getId());
-		createPaymentResponse.setRentalId(createdPayment.getRentalId());
-		createPaymentResponse.setStatus(createdPayment.getStatus());
-		
-		
-		//=modelMapperService.forResponse().map(createdPayment, CreatePaymentResponse.class);
+		paymentRepository.save(payment);
+		CreatePaymentResponse createPaymentResponse = modelMapperService.forResponse().map(payment, CreatePaymentResponse.class);
 
 		return createPaymentResponse;
 	}
-	private void checkBalanceEnough(double balance, String rentalId) {
-		if (balance<rentalApi.getTotalPrice(rentalId)) {
-			throw new BusinessException("BALANCE.IS.NOT.ENOUGH");
-		}
+
+	@Override
+	public void paymentReceived(String cardNo, String cardHolder, String cvv, double balance) {
+		checkIfRentalBalance(cardNo, cardHolder, cvv, balance);// card bilgisi kontrol ve ödeme işlemi
+
 	}
 
+	private void checkIfRentalBalance(String cardNo, String cardHolder, String cvv, double totalPrice) {
+		Payment payment = this.paymentRepository.findByCardNoAndCardHolderAndCvv(cardNo, cardHolder, cvv);
+		if (payment == null) {
+			throw new BusinessException(Messages.InvalidPayment);
+		}
+		double amount = this.paymentRepository.findByCardNo(cardNo).getBalance();
+		if (amount < totalPrice) {
+			throw new BusinessException(Messages.InsufficientBalance);
+		}
+		posCheckService.pay();
+		Payment payment2 = this.paymentRepository.findByCardNo(cardNo);
+		payment2.setBalance(amount - totalPrice);
+		this.paymentRepository.save(payment2);
+	}
+
+	@Override
+	 public void delete(String id) {
+        checkIfPaymentExists(id);
+        paymentRepository.deleteById(id);
+    }
+
+	private void checkIfPaymentExists(String id) {
+		  if (!paymentRepository.existsById(id)) {
+	            throw new BusinessException(Messages.PaymentNotFound);
+	        }
+	    }
 }

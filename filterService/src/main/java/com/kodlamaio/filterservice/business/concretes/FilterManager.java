@@ -6,12 +6,16 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.kodlamaio.common.events.filter.CarCreatedEvent;
-import com.kodlamaio.common.events.filter.CarDeletedEvent;
+import com.kodlamaio.common.events.inventory.brand.BrandUpdatedEvent;
+import com.kodlamaio.common.events.inventory.car.CarCreatedEvent;
+import com.kodlamaio.common.events.inventory.car.CarDeletedEvent;
+import com.kodlamaio.common.events.inventory.car.CarUpdatedEvent;
+import com.kodlamaio.common.events.inventory.model.ModelUpdatedEvent;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
 import com.kodlamaio.filterservice.business.responses.GetAllFiltersResponse;
-import com.kodlamaio.filterservice.business.responses.GetFiltersResponse;
+import com.kodlamaio.filterservice.business.responses.GetFilterResponse;
+
 import com.kodlamaio.filterservice.dataAccess.FilterRepository;
 import com.kodlamaio.filterservice.entities.Filter;
 
@@ -21,13 +25,13 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class FilterManager implements FilterService{
 	private  FilterRepository filterRepository;
-    private  ModelMapperService modelMapper;
+    private  ModelMapperService modelMapperService;
 	
 	@Override
 	public List<GetAllFiltersResponse> getAll() {
         List<Filter> filters = filterRepository.findAll();
 
-        List<GetAllFiltersResponse> responses = filters.stream().map(filter -> this.modelMapper.forRequest().map(filter, GetAllFiltersResponse.class))        		
+        List<GetAllFiltersResponse> responses = filters.stream().map(filter -> this.modelMapperService.forRequest().map(filter, GetAllFiltersResponse.class))        		
        				.collect(Collectors.toList());
 		return responses;
 	}
@@ -35,7 +39,7 @@ public class FilterManager implements FilterService{
 	@Override
 	public List<GetAllFiltersResponse> getByBrandName(String brandName) {
 		 List<Filter> filters = this.filterRepository.findAll();
-		 List<GetAllFiltersResponse> responses = filters.stream().map(filter -> this.modelMapper.forRequest().map(filter, GetAllFiltersResponse.class))
+		 List<GetAllFiltersResponse> responses = filters.stream().map(filter -> this.modelMapperService.forRequest().map(filter, GetAllFiltersResponse.class))
 				 .collect(Collectors.toList());
 				 
 				 
@@ -44,16 +48,16 @@ public class FilterManager implements FilterService{
 
 	@Override
 	public List<GetAllFiltersResponse> getByModelName(String modelName) {
-		List<Filter> filters = filterRepository.findByModelNameIgnoreCase(modelName);
-		List<GetAllFiltersResponse> responses=filters.stream().map(filter-> this.modelMapper.forRequest().map(filter, GetAllFiltersResponse.class))	
+		List<Filter> filters = filterRepository.findByModelName(modelName);
+		List<GetAllFiltersResponse> responses=filters.stream().map(filter-> this.modelMapperService.forRequest().map(filter, GetAllFiltersResponse.class))	
 				.collect(Collectors.toList());
 				return responses;
 	}
 
 	@Override
-	public GetFiltersResponse getByPlate(String plate) {
+	public GetFilterResponse getByPlate(String plate) {
 		Filter filter= filterRepository.findByPlate(plate);
-		GetFiltersResponse getFiltersResponse = this.modelMapper.forResponse().map(filter, GetFiltersResponse.class);
+		GetFilterResponse getFiltersResponse = this.modelMapperService.forResponse().map(filter, GetFilterResponse.class);
 		return getFiltersResponse;
 		
 	}
@@ -61,17 +65,8 @@ public class FilterManager implements FilterService{
 
 
 	@Override
-	public void deleteAllByBrandId(String brandId) {
-		filterRepository.deleteAllByBrandId(brandId);
-	}
-	@Override
-	public void deleteAllByModelId(String modelId) {
-		filterRepository.deleteAllByModelId(modelId);
-	}
-
-	@Override
 	public void addCar(CarCreatedEvent carCreatedEvent) {
-		Filter filter = this.modelMapper.forRequest().map(carCreatedEvent, Filter.class);
+		Filter filter = this.modelMapperService.forRequest().map(carCreatedEvent, Filter.class);
 		this.filterRepository.save(filter);
 	}
 
@@ -81,7 +76,7 @@ public class FilterManager implements FilterService{
 		List<GetAllFiltersResponse> responses = new ArrayList<GetAllFiltersResponse>();
 		for (Filter filter : filters) {
 			if(filter.getDailyPrice()<max && filter.getDailyPrice()>min) {
-				GetAllFiltersResponse response = this.modelMapper.forResponse().map(filter, GetAllFiltersResponse.class);
+				GetAllFiltersResponse response = this.modelMapperService.forResponse().map(filter, GetAllFiltersResponse.class);
 				responses.add(response);
 		
 			}
@@ -91,23 +86,58 @@ public class FilterManager implements FilterService{
 	}
 
 	@Override
-	public List<GetAllFiltersResponse> getByModelYear(int min, int max) {
-		List<Filter> filters = this.filterRepository.findAll();
-		List<GetAllFiltersResponse> responses = new ArrayList<GetAllFiltersResponse>();
-		for (Filter filter : filters) {
-			if(filter.getModelYear()<max && filter.getModelYear()>min) {
-				GetAllFiltersResponse response = this.modelMapper.forResponse().map(filter, GetAllFiltersResponse.class);
-				responses.add(response);
-		
-			}
+	public List<GetAllFiltersResponse> getByModelYear(int modelYear) {
+		 List<Filter> filters = filterRepository.findByModelYear(modelYear);
+	        List<GetAllFiltersResponse> response = filters.stream().map(filter-> this.modelMapperService.forRequest().map(filter, GetAllFiltersResponse.class))	
+					.collect(Collectors.toList());
+	        		//.map(filter-> modelMapperService.forResponse()
+	        		//.map(filter, GetAllFiltersResponse.class));
+	        		
+	    	return response;	
+	
 			
 		}
-		return responses;
+	
+	
+
+
+
+	@Override
+	public void updateCar(CarUpdatedEvent carUpdatedEvent) {
+		Filter filter = this.modelMapperService.forRequest().map(carUpdatedEvent, Filter.class);
+		this.filterRepository.save(filter);
+	}
+		
+	
+
+	@Override
+	public void updateBrand(BrandUpdatedEvent brandUpdatedEvent) {
+		List<Filter> filters = this.filterRepository.findByBrandName(brandUpdatedEvent.getBrandName());
+		for (Filter filter : filters) {
+			filter.setBrandName(brandUpdatedEvent.getBrandName());
+			filter.setBrandId(brandUpdatedEvent.getBrandId());
+			this.filterRepository.save(filter);
+		}
+	}
+
+	@Override
+	public void updateModel(ModelUpdatedEvent modelUpdatedEvent) {
+		List<Filter> filters = this.filterRepository.findByModelName(modelUpdatedEvent.getModelName());
+		for (Filter filter : filters) {
+			filter.setBrandName(modelUpdatedEvent.getBrandName());
+			filter.setBrandId(modelUpdatedEvent.getBrandId());
+			filter.setModelName(modelUpdatedEvent.getModelName());
+			filter.setModelId(modelUpdatedEvent.getModelId());
+			this.filterRepository.save(filter);
+		}
 	}
 
 	@Override
 	public void deleteCar(CarDeletedEvent carDeletedEvent) {
-		filterRepository.deleteByCarId(carDeletedEvent.getCarId());
+		Filter filter = this.filterRepository.findByCarId(carDeletedEvent.getCarId());
+		this.filterRepository.delete(filter);
+
+		
 	}
 	
 	

@@ -1,9 +1,0 @@
-spring:
-    application:
-        name: eurekaserver
-    cloud:
-        config:
-            profile: dev
-    config:
-        import: configserver:http://localhost:8888
-

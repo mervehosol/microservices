@@ -9,28 +9,38 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
 import com.kodlamaio.filterservice.business.responses.GetAllFiltersResponse;
+import com.kodlamaio.filterservice.business.responses.GetFilterResponse;
 
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("/api/v1/filters")
+@RequestMapping("/api/filters")
 @AllArgsConstructor
 public class FilterController {
-	private final FilterService service;
+	private final FilterService filterService;
 
     @GetMapping
     public List<GetAllFiltersResponse> getAll() {
-        return service.getAll();
+        return filterService.getAll();
     }
 
     @GetMapping("/brand")
     public List<GetAllFiltersResponse> getByBrandName(@RequestParam String brandName) {
-        return service.getByBrandName(brandName);
+        return filterService.getByBrandName(brandName);
     }
 
     @GetMapping("/model")
     public List<GetAllFiltersResponse> getByModelName(@RequestParam String modelName) {
-        return service.getByModelName(modelName);
+        return filterService.getByModelName(modelName);
+    }
+    @GetMapping("/plate")
+    public GetFilterResponse getByPlate(@RequestParam String plate) {
+        return filterService.getByPlate(plate);
+    }
+    @GetMapping("/year")
+    public List<GetAllFiltersResponse> getByModelYear(@RequestParam int modelYear) {
+        return filterService.getByModelYear(modelYear);
     }
 
+    
 }

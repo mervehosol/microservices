@@ -1,4 +1,4 @@
-package com.kodlamaio.inventoryService.api.controller;
+package com.kodlamaio.inventoryService.api.controllers;
 
 import java.util.List;
 

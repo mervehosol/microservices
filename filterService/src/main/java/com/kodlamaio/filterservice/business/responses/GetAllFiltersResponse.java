@@ -5,18 +5,26 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class GetAllFiltersResponse {
 	private String id;
-    private String carId;
-    private String modelId;
-    private String brandId;
-    private String modelName;
-    private String brandName;
-    private double dailyPrice;
-    private int modelYear;
-    private String plate;
-    private int state;
 
+	private String carId;
+
+	private String brandId;
+
+	private String brandName;
+
+	private String modelId;
+
+	private String modelName;
+
+	private double dailyPrice;
+
+	private int modelYear;
+
+	private String plate;
+
+	private int state;
 }
