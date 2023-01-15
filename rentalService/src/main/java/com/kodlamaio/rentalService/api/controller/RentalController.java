@@ -48,7 +48,7 @@ public class RentalController { // aracın bilgisini aldım
 		createPaymentRequest.setCardHolder(cardHolder);
 		createPaymentRequest.setCardNo(cardNo);
 		createPaymentRequest.setCvv(cvv);
-		CreateRentalResponse result = this.rentalService.add(createRentalRequest,createPaymentRequest);
+	//	CreateRentalResponse result = this.rentalService.add(createRentalRequest,createPaymentRequest);
 
 		return rentalService.add(createRentalRequest, createPaymentRequest);
 	}

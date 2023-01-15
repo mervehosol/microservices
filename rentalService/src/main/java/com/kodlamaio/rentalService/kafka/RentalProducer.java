@@ -32,7 +32,7 @@ public class RentalProducer { //producer inventroy nin consumera gönderiyor ,co
 		LOGGER.info(String.format("Rental created event => %s", rentalCreatedEvent.toString()));
 
 		Message<RentalCreatedEvent> message = MessageBuilder.withPayload(rentalCreatedEvent)
-				.setHeader(KafkaHeaders.TOPIC, topic.name()).build();
+				.setHeader(KafkaHeaders.TOPIC,"rental-created").build();
 
 		kafkaTemplate1.send(message);
 	}
@@ -41,7 +41,7 @@ public class RentalProducer { //producer inventroy nin consumera gönderiyor ,co
 		
 		Message<RentalUpdatedEvent> message = MessageBuilder
 				.withPayload(rentalUpdatedEvent)
-				.setHeader(KafkaHeaders.TOPIC, topic.name()).build();
+				.setHeader(KafkaHeaders.TOPIC, "rental-updated").build();
 		
 		kafkaTemplate2.send(message);
 	}

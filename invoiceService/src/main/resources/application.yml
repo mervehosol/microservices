@@ -1,6 +1,6 @@
 spring:
     application:
-        name: invoice
+        name: order
     cloud:
         config:
             profile: dev

@@ -21,15 +21,16 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @RequestMapping("/api/invoices")
 public class InvoicesController {
-    private final InvoiceService invoiceService;
+	
+    private InvoiceService invoiceService;
 
  
 
     @PostMapping
     public CreateInvoiceResponse add(@Valid @RequestBody CreateInvoiceRequest createInvoiceRequest) {
-        return invoiceService.add(createInvoiceRequest);
+        return this.invoiceService.add(createInvoiceRequest);
     }
-    @GetMapping
+    @GetMapping("/getall")
 	public List<GetAllInvoicesResponse> getAll(){
 		return this.invoiceService.getAll();
 	}

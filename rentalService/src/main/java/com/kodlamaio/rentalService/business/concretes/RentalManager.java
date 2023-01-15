@@ -13,7 +13,7 @@ import com.kodlamaio.common.events.rental.RentalCreatedEvent;
 import com.kodlamaio.common.events.rental.RentalUpdatedEvent;
 import com.kodlamaio.common.utilities.exceptions.BusinessException;
 import com.kodlamaio.common.utilities.mapping.ModelMapperService;
-import com.kodlamaio.inventoryService.business.responses.get.GetCarResponse;
+
 import com.kodlamaio.rentalService.business.abstracts.RentalService;
 import com.kodlamaio.rentalService.business.constants.Messages;
 import com.kodlamaio.rentalService.business.requests.create.CreatePaymentRequest;
@@ -21,6 +21,7 @@ import com.kodlamaio.rentalService.business.requests.create.CreateRentalRequest;
 import com.kodlamaio.rentalService.business.requests.update.UpdateRentalRequest;
 import com.kodlamaio.rentalService.business.responses.create.CreateRentalResponse;
 import com.kodlamaio.rentalService.business.responses.get.GetAllRentalsResponse;
+import com.kodlamaio.rentalService.business.responses.get.GetCarResponse;
 import com.kodlamaio.rentalService.business.responses.get.GetRentalResponse;
 import com.kodlamaio.rentalService.business.responses.update.UpdateRentalResponse;
 import com.kodlamaio.rentalService.client.InventoryClient;

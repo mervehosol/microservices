@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.kodlamaio.inventoryService.business.responses.get.GetCarResponse;
+import com.kodlamaio.rentalService.business.responses.get.GetCarResponse;
 
 import feign.Headers;
 

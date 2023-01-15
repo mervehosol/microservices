@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.kodlamaio.rentalService.business.requests.create.CreateRentalRequest"/>
-    <fullyQualifiedTypeName name="com.kodlamaio.rentalService.business.constants.Messages"/>
     <fullyQualifiedTypeName name="javax.validation.constraints.NotEmpty"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="com.kodlamaio.paymentservice.business.abstracts.PaymentService"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
@@ -22,7 +19,6 @@
     <fullyQualifiedTypeName name="com.kodlamaio.common.utilities.exceptions.BusinessException"/>
     <fullyQualifiedTypeName name="com.kodlamaio.paymentservice.business.constants.Messages"/>
     <fullyQualifiedTypeName name="org.springframework.kafka.annotation.EnableKafka"/>
-    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.kodlamaio.invoiceservice.business.abstracts.InvoiceService"/>
     <fullyQualifiedTypeName name="com.kodlamaio.common.utilities.mapping.ModelMapperService"/>
@@ -53,11 +49,15 @@
     <fullyQualifiedTypeName name="com.kodlamaio.common.events.inventory.brand.BrandUpdatedEvent"/>
     <fullyQualifiedTypeName name="com.kodlamaio.common.events.inventory.model.ModelUpdatedEvent"/>
     <fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestControllerAdvice"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
     <fullyQualifiedTypeName name="com.kodlamaio.common.utilities.results.ErrorDataResult"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="org.springframework.messaging.handler.annotation.support.MethodArgumentNotValidException"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="com.kodlamaio.rentalService.business.responses.get.GetCarResponse"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestControllerAdvice"/>
 </qualifiedTypeNameHistroy>
