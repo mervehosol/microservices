@@ -21,11 +21,20 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>io.github.mervehosol</groupId>
+			<artifactId>common</artifactId>
+			<version>1.0.9-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
 			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+		
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,7 +51,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
-			<version>3.1.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
